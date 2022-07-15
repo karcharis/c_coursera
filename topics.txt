@@ -1,0 +1,5 @@
+utf-8 @text-encoding
+signed ints in binary @computer-architecture
+floats in binary @computer-architecture
+what is a 32-bit architecture @computer-architecture
+oparetor precedance @c 
