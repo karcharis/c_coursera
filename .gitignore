@@ -4,3 +4,6 @@
 
 # ignore all hiden files
 ./.*
+
+# ignore my personal notes
+./notes
