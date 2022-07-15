@@ -1,0 +1,6 @@
+# ignore all notes, except the README.md
+~.md
+!README.md
+
+# ignore all hiden files
+./.*
