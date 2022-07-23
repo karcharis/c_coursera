@@ -9,6 +9,7 @@ struct deck_tag {
 typedef struct deck_tag deck_t;
 
 void print_hand(deck_t * hand);
+int isEq_card_t(card_t c1, card_t c2);
 int deck_contains(deck_t * d, card_t c) ;
 void shuffle(deck_t * d);
 void assert_full_deck(deck_t * d) ;

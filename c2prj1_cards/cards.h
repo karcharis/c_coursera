@@ -16,6 +16,10 @@ struct card_tag {
   unsigned value;
   suit_t suit;
 };
+
+#define HAS_VALID_VAL(value) (value > 1) && (value <= VALUE_ACE) 
+#define HAS_VALID_SUIT(suit) (suit >= SPADES) && (suit <= CLUBS)
+
 typedef struct card_tag card_t;
 typedef enum {
   STRAIGHT_FLUSH,
@@ -29,6 +33,7 @@ typedef enum {
   NOTHING
 } hand_ranking_t;
 card_t card_from_num(unsigned c);
+unsigned is_card(card_t c);
 void assert_card_valid(card_t c);
 const char * ranking_to_string(hand_ranking_t r) ;
 char value_letter(card_t c);

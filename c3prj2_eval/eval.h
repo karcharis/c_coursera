@@ -13,4 +13,5 @@ int compare_hands(deck_t * hand1, deck_t * hand2) ;
 int is_straight_at(deck_t * hand, size_t index, suit_t fs);
 suit_t flush_suit(deck_t * hand);
 void sort_hand(deck_t * hand);
+unsigned * get_match_counts(deck_t * hand);
 #endif

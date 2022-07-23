@@ -3,9 +3,13 @@
 #include <assert.h>
 #include "cards.h"
 
+
+unsigned is_card(card_t c) {
+ return HAS_VALID_VAL(c.value) && HAS_VALID_SUIT(c.suit);
+}
+
 void assert_card_valid(card_t c) {
-	assert(c.value >= 2 && c.value <= VALUE_ACE);
-	assert(c.suit >= SPADES && c.suit <= CLUBS);
+	assert(is_card(c));
 }
 
 const char * ranking_to_string(hand_ranking_t r) {
